@@ -1,0 +1,86 @@
+input{
+    outline: none;
+    max-width: 100%;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding-left: 10px;
+    margin-left:10px;
+   
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    width: 100vw;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom:40px ;
+}
+input:nth-child(n){
+    border: 1px solid burlywood;
+
+}
+input:nth-child(2){
+    border: 1px solid skyblue;
+
+}
+th:nth-child(1n){
+    color: burlywood;
+}
+th:nth-child(2n){
+    color: skyblue;
+}
+#btn{
+    margin-left: 10px;
+    border: 1px solid skyblue;
+    color: skyblue;
+    border-radius: 10px;
+    padding: 4px;
+}
+.fa-times{
+    cursor: pointer;
+}
+h1{
+    color: skyblue;
+}
+@media screen and (max-width:696px){
+    #btn{
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width:603px){
+    input:nth-child(3){
+        margin-top: 5px;
+    }
+}@media screen and (max-width:408px){
+    .main{
+flex-direction: column;
+align-items: center;
+    }
+    #Price{
+        margin: 0px;
+        margin-top: 5px;
+    }
+    input{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:320px){
+    #Name,#Price,#Lprice{
+        margin-left: 30px;
+    }
+    
+    #btn{
+        margin-left: 30px;
+    }
+}
